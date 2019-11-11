@@ -103,7 +103,6 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         $user_id = auth()->user()->id;
-        $user_id = 3;
 
         if ($product->user_id === $user_id){
             
